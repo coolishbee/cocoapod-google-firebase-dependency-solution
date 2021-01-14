@@ -1,0 +1,1 @@
+# cocoapod-google-firebase-dependency-solution
