@@ -7,8 +7,20 @@
 
 #import "SDKApplicationDelegate.h"
 
-//@import Firebase
+@import Firebase;
 
 @implementation SDKApplicationDelegate
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    [[FIRConfiguration sharedInstance] setLoggerLevel:FIRLoggerLevelMin];
+    [FIRApp configure];
+    
+    
+    return YES;
+}
+
 @end
+
+

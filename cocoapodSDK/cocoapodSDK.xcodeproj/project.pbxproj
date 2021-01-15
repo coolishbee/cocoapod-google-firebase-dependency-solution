@@ -10,9 +10,13 @@
 		ACD205E525B038CD002FC5B0 /* cocoapodSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD205E325B038CD002FC5B0 /* cocoapodSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD2064A25B14A45002FC5B0 /* SDKApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD2064825B14A45002FC5B0 /* SDKApplicationDelegate.h */; };
 		ACD2064B25B14A45002FC5B0 /* SDKApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD2064925B14A45002FC5B0 /* SDKApplicationDelegate.m */; };
+		CB7910791CD178C279AE5A63 /* libPods-cocoapodSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7476AB35B6B992D53F5C97 /* libPods-cocoapodSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodSDK.release.xcconfig"; path = "Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK.release.xcconfig"; sourceTree = "<group>"; };
+		1E7476AB35B6B992D53F5C97 /* libPods-cocoapodSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoapodSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7E96B81DA61DBDED39A5CE /* Pods-cocoapodSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodSDK.debug.xcconfig"; path = "Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD205E025B038CD002FC5B0 /* cocoapodSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocoapodSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD205E325B038CD002FC5B0 /* cocoapodSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoapodSDK.h; sourceTree = "<group>"; };
 		ACD205E425B038CD002FC5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7910791CD178C279AE5A63 /* libPods-cocoapodSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9780B442141167137D616ED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E7476AB35B6B992D53F5C97 /* libPods-cocoapodSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACD205D625B038CD002FC5B0 = {
 			isa = PBXGroup;
 			children = (
 				ACD205E225B038CD002FC5B0 /* cocoapodSDK */,
 				ACD205E125B038CD002FC5B0 /* Products */,
+				C3DFE7517E44F1905552E58C /* Pods */,
+				9780B442141167137D616ED5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +73,16 @@
 			path = cocoapodSDK;
 			sourceTree = "<group>";
 		};
+		C3DFE7517E44F1905552E58C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A7E96B81DA61DBDED39A5CE /* Pods-cocoapodSDK.debug.xcconfig */,
+				0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACD205E825B038CD002FC5B0 /* Build configuration list for PBXNativeTarget "cocoapodSDK" */;
 			buildPhases = (
+				61ECF53C0C6D85B97092AD68 /* [CP] Check Pods Manifest.lock */,
 				ACD205DB25B038CD002FC5B0 /* Headers */,
 				ACD205DC25B038CD002FC5B0 /* Sources */,
 				ACD205DD25B038CD002FC5B0 /* Frameworks */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61ECF53C0C6D85B97092AD68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoapodSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACD205DC25B038CD002FC5B0 /* Sources */ = {
@@ -264,6 +315,7 @@
 		};
 		ACD205E925B038CD002FC5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7E96B81DA61DBDED39A5CE /* Pods-cocoapodSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -279,6 +331,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -288,6 +341,7 @@
 		};
 		ACD205EA25B038CD002FC5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -303,6 +357,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
