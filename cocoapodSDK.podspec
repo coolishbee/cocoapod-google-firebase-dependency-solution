@@ -1,7 +1,7 @@
   
 Pod::Spec.new do |s|
   s.name                = "cocoapodSDK"
-  s.version             = "0.0.11"
+  s.version             = "0.0.12"
   s.summary             = "The SDK for iOS Swift provides a modern way of implementing APIs."
 
   s.description         = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   
   s.source_files        = ["cocoapodSDK/cocoapodSDK/**/*.h", "cocoapodSDK/cocoapodSDK/**/*.m"]
   
-  s.vendored_frameworks = ["cocoapodSDK/**/*.xcframework"]
+  s.vendored_frameworks = ["cocoapodSDK/Frameworks/**/*.framework"]
     
   s.dependency          'AFNetworking', '~> 3.0'
   
