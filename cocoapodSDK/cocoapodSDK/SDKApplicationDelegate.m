@@ -7,8 +7,10 @@
 
 #import "SDKApplicationDelegate.h"
 
-//#import "FIRConfiguration.h"
-//#import "FIRApp.h"
+//@import FirebaseAuth;
+//@import FirebaseCore;
+#import <FirebaseCore/FIRConfiguration.h>
+#import <FirebaseCore/FIRApp.h>
 #import "AFNetworking.h"
 
 @implementation SDKApplicationDelegate
@@ -16,8 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    //[[FIRConfiguration sharedInstance] setLoggerLevel:FIRLoggerLevelMin];
-    //[FIRApp configure];
+    [[FIRConfiguration sharedInstance] setLoggerLevel:FIRLoggerLevelMin];
+    [FIRApp configure];
     
     
     return YES;
