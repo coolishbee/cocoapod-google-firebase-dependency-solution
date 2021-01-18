@@ -1,7 +1,7 @@
   
 Pod::Spec.new do |s|
   s.name                = "cocoapodSDK"
-  s.version             = "0.0.9"
+  s.version             = "0.0.11"
   s.summary             = "The SDK for iOS Swift provides a modern way of implementing APIs."
 
   s.description         = <<-DESC
@@ -16,10 +16,12 @@ Pod::Spec.new do |s|
   s.author              = "James"
   s.platform            = :ios, "10.0"
   
-  s.module_name         = "SDK1"
+  s.module_name         = "cocoapodSDK"
   s.source              = { :git => "https://github.com/james-chun-dev/cocoapod-google-firebase-dependency-solution.git", :tag => "#{s.version}" }
   
   s.source_files        = ["cocoapodSDK/cocoapodSDK/**/*.h", "cocoapodSDK/cocoapodSDK/**/*.m"]
+  
+  s.vendored_frameworks = ["cocoapodSDK/**/*.xcframework"]
     
   s.dependency          'AFNetworking', '~> 3.0'
   

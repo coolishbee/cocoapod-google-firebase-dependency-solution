@@ -12,47 +12,16 @@
 		ACD2064A25B14A45002FC5B0 /* SDKApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD2064825B14A45002FC5B0 /* SDKApplicationDelegate.h */; };
 		ACD2064B25B14A45002FC5B0 /* SDKApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD2064925B14A45002FC5B0 /* SDKApplicationDelegate.m */; };
 		ACD2081D25B58993002FC5B0 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2081825B5896B002FC5B0 /* GTMSessionFetcher.xcframework */; };
-		ACD2081E25B58993002FC5B0 /* GTMSessionFetcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2081825B5896B002FC5B0 /* GTMSessionFetcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2082025B58994002FC5B0 /* FirebaseAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2081925B5896B002FC5B0 /* FirebaseAuth.xcframework */; };
-		ACD2082125B58994002FC5B0 /* FirebaseAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2081925B5896B002FC5B0 /* FirebaseAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2084F25B58A57002FC5B0 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084325B58A1F002FC5B0 /* FirebaseCore.xcframework */; };
-		ACD2085025B58A57002FC5B0 /* FirebaseCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084325B58A1F002FC5B0 /* FirebaseCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085125B58A58002FC5B0 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084125B58A1F002FC5B0 /* FirebaseCoreDiagnostics.xcframework */; };
-		ACD2085225B58A58002FC5B0 /* FirebaseCoreDiagnostics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084125B58A1F002FC5B0 /* FirebaseCoreDiagnostics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085325B58A59002FC5B0 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084625B58A1F002FC5B0 /* FirebaseInstallations.xcframework */; };
-		ACD2085425B58A59002FC5B0 /* FirebaseInstallations.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084625B58A1F002FC5B0 /* FirebaseInstallations.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085525B58A5B002FC5B0 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084425B58A1F002FC5B0 /* GoogleDataTransport.xcframework */; };
-		ACD2085625B58A5B002FC5B0 /* GoogleDataTransport.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084425B58A1F002FC5B0 /* GoogleDataTransport.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085725B58A5C002FC5B0 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084225B58A1F002FC5B0 /* GoogleUtilities.xcframework */; };
-		ACD2085825B58A5C002FC5B0 /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084225B58A1F002FC5B0 /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085925B58A60002FC5B0 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084525B58A1F002FC5B0 /* nanopb.xcframework */; };
-		ACD2085A25B58A60002FC5B0 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084525B58A1F002FC5B0 /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085B25B58A61002FC5B0 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */; };
-		ACD2085C25B58A61002FC5B0 /* PromisesObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACD2085E25B58D85002FC5B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */; };
+		ACD2086125B59122002FC5B0 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD2086025B59122002FC5B0 /* Firebase.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		ACD2081F25B58993002FC5B0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				ACD2085C25B58A61002FC5B0 /* PromisesObjC.xcframework in Embed Frameworks */,
-				ACD2085625B58A5B002FC5B0 /* GoogleDataTransport.xcframework in Embed Frameworks */,
-				ACD2085225B58A58002FC5B0 /* FirebaseCoreDiagnostics.xcframework in Embed Frameworks */,
-				ACD2085825B58A5C002FC5B0 /* GoogleUtilities.xcframework in Embed Frameworks */,
-				ACD2085425B58A59002FC5B0 /* FirebaseInstallations.xcframework in Embed Frameworks */,
-				ACD2082125B58994002FC5B0 /* FirebaseAuth.xcframework in Embed Frameworks */,
-				ACD2085025B58A57002FC5B0 /* FirebaseCore.xcframework in Embed Frameworks */,
-				ACD2081E25B58993002FC5B0 /* GTMSessionFetcher.xcframework in Embed Frameworks */,
-				ACD2085A25B58A60002FC5B0 /* nanopb.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodSDK.release.xcconfig"; path = "Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +41,7 @@
 		ACD2084525B58A1F002FC5B0 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
 		ACD2084625B58A1F002FC5B0 /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseInstallations.xcframework; sourceTree = "<group>"; };
 		ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
-		ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACD2086025B59122002FC5B0 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +68,7 @@
 		9780B442141167137D616ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACD2086025B59122002FC5B0 /* Firebase.h */,
 				ACD2084325B58A1F002FC5B0 /* FirebaseCore.xcframework */,
 				ACD2084125B58A1F002FC5B0 /* FirebaseCoreDiagnostics.xcframework */,
 				ACD2084625B58A1F002FC5B0 /* FirebaseInstallations.xcframework */,
@@ -116,7 +86,6 @@
 		ACD205D625B038CD002FC5B0 = {
 			isa = PBXGroup;
 			children = (
-				ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */,
 				ACD205E225B038CD002FC5B0 /* cocoapodSDK */,
 				ACD205E125B038CD002FC5B0 /* Products */,
 				C3DFE7517E44F1905552E58C /* Pods */,
@@ -160,6 +129,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD2086125B59122002FC5B0 /* Firebase.h in Headers */,
 				ACD205E525B038CD002FC5B0 /* cocoapodSDK.h in Headers */,
 				ACD2064A25B14A45002FC5B0 /* SDKApplicationDelegate.h in Headers */,
 			);
@@ -177,7 +147,6 @@
 				ACD205DB25B038CD002FC5B0 /* Headers */,
 				ACD205DD25B038CD002FC5B0 /* Frameworks */,
 				ACD205DE25B038CD002FC5B0 /* Resources */,
-				ACD2081F25B58993002FC5B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD2085E25B58D85002FC5B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +358,7 @@
 			baseConfigurationReference = 3A7E96B81DA61DBDED39A5CE /* Pods-cocoapodSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -403,7 +372,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.10;
+				MARKETING_VERSION = 0.0.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -416,6 +385,7 @@
 			baseConfigurationReference = 0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -429,7 +399,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.10;
+				MARKETING_VERSION = 0.0.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
