@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BDFDB60D110C87865184BAD /* libPods-cocoapodSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34936E5E4D08A92035EFE4BE /* libPods-cocoapodSDK.a */; };
 		ACD205E525B038CD002FC5B0 /* cocoapodSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD205E325B038CD002FC5B0 /* cocoapodSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD2064A25B14A45002FC5B0 /* SDKApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD2064825B14A45002FC5B0 /* SDKApplicationDelegate.h */; };
 		ACD2064B25B14A45002FC5B0 /* SDKApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD2064925B14A45002FC5B0 /* SDKApplicationDelegate.m */; };
@@ -14,6 +15,7 @@
 
 /* Begin PBXFileReference section */
 		0F1E0AFA53B18B1D499E9A30 /* Pods-cocoapodSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodSDK.release.xcconfig"; path = "Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK.release.xcconfig"; sourceTree = "<group>"; };
+		34936E5E4D08A92035EFE4BE /* libPods-cocoapodSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoapodSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7E96B81DA61DBDED39A5CE /* Pods-cocoapodSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoapodSDK.debug.xcconfig"; path = "Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD205E025B038CD002FC5B0 /* cocoapodSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocoapodSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD205E325B038CD002FC5B0 /* cocoapodSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoapodSDK.h; sourceTree = "<group>"; };
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDFDB60D110C87865184BAD /* libPods-cocoapodSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +39,7 @@
 		9780B442141167137D616ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34936E5E4D08A92035EFE4BE /* libPods-cocoapodSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,7 +323,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = cocoapodSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -329,31 +332,6 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.8;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"FirebaseAuth\"",
-					"-l\"FirebaseCore\"",
-					"-l\"FirebaseCoreDiagnostics\"",
-					"-l\"GTMSessionFetcher\"",
-					"-l\"GoogleDataTransport\"",
-					"-l\"GoogleUtilities\"",
-					"-l\"PromisesObjC\"",
-					"-l\"nanopb\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -371,7 +349,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = cocoapodSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -381,31 +358,6 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.8;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"FirebaseAuth\"",
-					"-l\"FirebaseCore\"",
-					"-l\"FirebaseCoreDiagnostics\"",
-					"-l\"GTMSessionFetcher\"",
-					"-l\"GoogleDataTransport\"",
-					"-l\"GoogleUtilities\"",
-					"-l\"PromisesObjC\"",
-					"-l\"nanopb\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

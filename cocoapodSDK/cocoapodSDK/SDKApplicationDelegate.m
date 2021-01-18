@@ -7,8 +7,8 @@
 
 #import "SDKApplicationDelegate.h"
 
-#import "FIRConfiguration.h"
-#import "FIRApp.h"
+//#import "FIRConfiguration.h"
+//#import "FIRApp.h"
 #import "AFNetworking.h"
 
 @implementation SDKApplicationDelegate
@@ -16,8 +16,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[FIRConfiguration sharedInstance] setLoggerLevel:FIRLoggerLevelMin];
-    [FIRApp configure];
+    //[[FIRConfiguration sharedInstance] setLoggerLevel:FIRLoggerLevelMin];
+    //[FIRApp configure];
     
     
     return YES;
