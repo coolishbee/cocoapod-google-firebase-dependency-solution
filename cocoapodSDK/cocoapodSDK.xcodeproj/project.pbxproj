@@ -29,6 +29,7 @@
 		ACD2085A25B58A60002FC5B0 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084525B58A1F002FC5B0 /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACD2085B25B58A61002FC5B0 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */; };
 		ACD2085C25B58A61002FC5B0 /* PromisesObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACD2085E25B58D85002FC5B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,7 @@
 		ACD2084525B58A1F002FC5B0 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
 		ACD2084625B58A1F002FC5B0 /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FirebaseInstallations.xcframework; sourceTree = "<group>"; };
 		ACD2084725B58A1F002FC5B0 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
+		ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		ACD205D625B038CD002FC5B0 = {
 			isa = PBXGroup;
 			children = (
+				ACD2085D25B58D85002FC5B0 /* GoogleService-Info.plist */,
 				ACD205E225B038CD002FC5B0 /* cocoapodSDK */,
 				ACD205E125B038CD002FC5B0 /* Products */,
 				C3DFE7517E44F1905552E58C /* Pods */,
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD2085E25B58D85002FC5B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +403,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 0.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -425,7 +429,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 0.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
