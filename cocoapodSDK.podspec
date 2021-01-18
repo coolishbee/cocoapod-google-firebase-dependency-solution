@@ -1,7 +1,7 @@
   
 Pod::Spec.new do |s|
   s.name                = "cocoapodSDK"
-  s.version             = "0.0.5"
+  s.version             = "0.0.6"
   s.summary             = "The SDK for iOS Swift provides a modern way of implementing APIs."
 
   s.description         = <<-DESC
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.source_files        = ["cocoapodSDK/cocoapodSDK/**/*.h", "cocoapodSDK/cocoapodSDK/**/*.m"]
   
   s.dependency          'Firebase/Auth'
+  s.dependency          'AFNetworking', '~> 3.0'
   
 end
 

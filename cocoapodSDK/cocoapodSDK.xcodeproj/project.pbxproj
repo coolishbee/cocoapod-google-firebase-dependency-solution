@@ -331,7 +331,32 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FirebaseAuth\"",
+					"-l\"FirebaseCore\"",
+					"-l\"FirebaseCoreDiagnostics\"",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleDataTransport\"",
+					"-l\"GoogleUtilities\"",
+					"-l\"PromisesObjC\"",
+					"-l\"nanopb\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -357,7 +382,32 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FirebaseAuth\"",
+					"-l\"FirebaseCore\"",
+					"-l\"FirebaseCoreDiagnostics\"",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleDataTransport\"",
+					"-l\"GoogleUtilities\"",
+					"-l\"PromisesObjC\"",
+					"-l\"nanopb\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

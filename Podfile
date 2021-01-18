@@ -9,6 +9,7 @@ target 'cocoapodSDK' do
 
 	project 'cocoapodSDK/cocoapodSDK.xcodeproj'
 	pod 'Firebase/Auth'
+	pod 'AFNetworking', '~> 3.0'
 end
 
 target 'DemoApp' do
