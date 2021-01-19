@@ -1,7 +1,7 @@
   
 Pod::Spec.new do |s|
   s.name                = "cocoapodSDK"
-  s.version             = "0.0.17"
+  s.version             = "0.0.18"
   s.summary             = "The SDK for iOS Swift provides a modern way of implementing APIs."
 
   s.description         = <<-DESC
@@ -17,14 +17,21 @@ Pod::Spec.new do |s|
   s.platform            = :ios, "10.0"
   
   s.module_name         = "cocoapodSDK"
+  s.swift_version       = "4.2"
+  s.swift_versions      = ["4.2", "5.0"]
   s.source              = { :git => "https://github.com/james-chun-dev/cocoapod-google-firebase-dependency-solution.git", :tag => "#{s.version}" }
   
-  #s.vendored_frameworks = 'cocoapodSDK/cocoapodSDK.framework'
+  #s.source_files        = ["cocoapodSDK/cocoapodSDK/**/*.h", "cocoapodSDK/cocoapodSDK/**/*.m", "cocoapodSDK/cocoapodSDK/**/*.swift"]
+  #s.resource_bundle     = { 'cocoapodSDK' => 'cocoapodSDK/cocoapodSDK/Images.xcassets' }
+  
+  s.vendored_frameworks = 'cocoapodSDK/cocoapodSDK.framework'
     
   s.dependency          'AFNetworking', '~> 3.0'
+  s.dependency          'JSONModel'
   s.dependency          'Firebase/Auth'
   s.dependency          'Firebase/Messaging'
   s.dependency          'GoogleSignIn'
+  s.dependency          'FBSDKLoginKit'
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
