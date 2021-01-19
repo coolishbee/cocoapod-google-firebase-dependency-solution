@@ -7,11 +7,12 @@
 
 #import "SDKApplicationDelegate.h"
 
-//#import "Firebase.h"
-//#import <FirebaseCore/FIRConfiguration.h>
-//#import <FirebaseCore/FIRApp.h>
 @import Firebase;
+@import GoogleSignIn;
 #import "AFNetworking.h"
+
+@interface SDKApplicationDelegate(SignInWithGoogle)<GIDSignInDelegate>
+@end
 
 @implementation SDKApplicationDelegate
 

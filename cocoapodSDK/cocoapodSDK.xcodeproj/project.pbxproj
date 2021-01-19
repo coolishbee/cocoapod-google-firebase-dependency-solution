@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -107,6 +107,7 @@
 				ACD205DB25B038CD002FC5B0 /* Headers */,
 				ACD205DD25B038CD002FC5B0 /* Frameworks */,
 				ACD205DE25B038CD002FC5B0 /* Resources */,
+				2B5F1B00972E0C998A82A170 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +160,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B5F1B00972E0C998A82A170 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cocoapodSDK/Pods-cocoapodSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		61ECF53C0C6D85B97092AD68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,7 +337,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,7 +351,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.16;
+				MARKETING_VERSION = 0.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -347,7 +365,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -361,7 +379,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.16;
+				MARKETING_VERSION = 0.0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

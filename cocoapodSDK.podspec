@@ -1,7 +1,7 @@
   
 Pod::Spec.new do |s|
   s.name                = "cocoapodSDK"
-  s.version             = "0.0.16"
+  s.version             = "0.0.17"
   s.summary             = "The SDK for iOS Swift provides a modern way of implementing APIs."
 
   s.description         = <<-DESC
@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
     
   s.dependency          'AFNetworking', '~> 3.0'
   s.dependency          'Firebase/Auth'
+  s.dependency          'Firebase/Messaging'
+  s.dependency          'GoogleSignIn'
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
