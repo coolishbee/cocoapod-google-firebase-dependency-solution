@@ -319,26 +319,12 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/FirebaseCore.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/FirebaseCoreDiagnostics.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/FirebaseInstallations.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GoogleDataTransport.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GoogleUtilities.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GTMSessionFetcher.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/nanopb.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/PromisesObjC.xcframework/ios-arm64_armv7",
-				);
 				INFOPLIST_FILE = cocoapodSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -347,7 +333,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.15;
+				MARKETING_VERSION = 0.0.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -361,26 +347,12 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LR5GNR467V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/FirebaseCore.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/FirebaseCoreDiagnostics.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/FirebaseInstallations.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GoogleDataTransport.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GoogleUtilities.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/GTMSessionFetcher.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/nanopb.xcframework/ios-arm64_armv7",
-					"$(PROJECT_DIR)/PromisesObjC.xcframework/ios-arm64_armv7",
-				);
 				INFOPLIST_FILE = cocoapodSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -389,7 +361,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.15;
+				MARKETING_VERSION = 0.0.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.cocoapodSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

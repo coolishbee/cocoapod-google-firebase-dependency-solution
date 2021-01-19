@@ -8,8 +8,9 @@
 #import "SDKApplicationDelegate.h"
 
 //#import "Firebase.h"
-#import <FirebaseCore/FIRConfiguration.h>
-#import <FirebaseCore/FIRApp.h>
+//#import <FirebaseCore/FIRConfiguration.h>
+//#import <FirebaseCore/FIRApp.h>
+@import Firebase;
 #import "AFNetworking.h"
 
 @implementation SDKApplicationDelegate
