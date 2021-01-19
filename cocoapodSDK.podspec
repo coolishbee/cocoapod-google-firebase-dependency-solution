@@ -19,9 +19,14 @@ Pod::Spec.new do |s|
   s.module_name         = "cocoapodSDK"
   s.source              = { :git => "https://github.com/james-chun-dev/cocoapod-google-firebase-dependency-solution.git", :tag => "#{s.version}" }
   
-  s.vendored_frameworks = 'cocoapodSDK/cocoapodSDK.framework'
+  #s.vendored_frameworks = 'cocoapodSDK/cocoapodSDK.framework'
     
   s.dependency          'AFNetworking', '~> 3.0'
+  s.dependency          'Firebase/Auth'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    
   
 end
 

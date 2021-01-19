@@ -1,6 +1,0 @@
-framework module cocoapodSDK {
-  umbrella header "cocoapodSDK.h"
-
-  export *
-  module * { export * }
-}
