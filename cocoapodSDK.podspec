@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #s.source_files        = ["cocoapodSDK/cocoapodSDK/**/*.h", "cocoapodSDK/cocoapodSDK/**/*.m", "cocoapodSDK/cocoapodSDK/**/*.swift"]
   #s.resource_bundle     = { 'cocoapodSDK' => 'cocoapodSDK/cocoapodSDK/Images.xcassets' }
   
-  s.vendored_frameworks = 'Frameworks/cocoapodSDK.framework'
+  s.vendored_frameworks = 'cocoapodSDK/Frameworks/cocoapodSDK.framework'
     
   s.dependency          'AFNetworking', '~> 3.0'
   s.dependency          'JSONModel'
